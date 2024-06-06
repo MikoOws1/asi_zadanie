@@ -8,7 +8,7 @@ import json
 
 def pobierzpogode():
   r = requests.get(
-    'https://api.openweathermap.org/data/2.5/weather?q=Lisbon,pt&callback=test&appid=e13fe25125fe2a36401395cf9ef7400d'
+    'https://api.openweathermap.org/data/2.5/weather?q=Lisbon,pt&callback=test&appid={apikey}'
   )
   #Usuwanie niepotrzebnych elementow
   loc_weather = r.content.strip()
